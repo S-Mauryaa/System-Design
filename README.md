@@ -1,119 +1,114 @@
-# 🚀 System Design & Object-Oriented Programming (OOP) Study Roadmap
+# 🚀 System Design & OOPs Learning Tracker
 
-Welcome to my **System Design and OOP** learning repository! This project serves as a structured log of my journey in mastering object-oriented paradigms, low-level design patterns, and high-level architectural systems using C++ as the primary implementation language.
+Welcome to my learning repository! This project is a structured log of my progress through two main curriculums:
+1. **C++ OOPs Foundations** (Lectures 70–77)
+2. **System Design & LLD (Low-Level Design)** (Lectures 1–10 + Real-World Projects)
 
 ---
 
-## 🗺️ Learning Roadmap & Progress
+## 📌 Study Plan & Priority
+> [!IMPORTANT]
+> **Primary Goal**: Complete the C++ OOPs lectures first to build a solid code-level understanding.
+> **Secondary Goal**: Transition to System Design (UML, SOLID, Design Patterns, and LLD case studies) after finishing OOPs.
 
-Here is a visual roadmap of my progression from foundational programming concepts to full-scale High-Level System Design (HLD):
+---
+
+## 📊 Overall Progress Dashboard
 
 ```mermaid
-graph TD
-    A[Foundational OOP Concepts] -->|Completed| B[Abstraction & Memory Management]
-    B -->|Current Phase| C[Advanced OOP & SOLID Principles]
-    C -->|Next Goal| D[Low-Level Design & Design Patterns]
-    D -->|Future Goal| E[High-Level System Design & Architecture]
-    
-    style A fill:#4CAF50,stroke:#388E3C,stroke-width:2px,color:#fff
-    style B fill:#4CAF50,stroke:#388E3C,stroke-width:2px,color:#fff
-    style C fill:#FF9800,stroke:#F57C00,stroke-width:2px,color:#fff
-    style D fill:#2196F3,stroke:#1976D2,stroke-width:2px,color:#fff
-    style E fill:#9C27B0,stroke:#7B1FA2,stroke-width:2px,color:#fff
+gantt
+    title Learning Progress Timeline
+    dateFormat  YYYY-MM-DD
+    section C++ OOPs Lectures
+    Basic OOP & Layout      :done,    des1, 2026-07-01, 2026-07-03
+    Constructor/Destructor  :done,    des2, 2026-07-02, 2026-07-03
+    Static Members & Encap  :active,  des3, 2026-07-03, 2026-07-05
+    Inheritance             :todo,    des4, after des3, 5d
+    Polymorphism            :todo,    des5, after des4, 3d
+    Exception & Files       :todo,    des6, after des5, 4d
+    section System Design
+    UML & SOLID             :todo,    sd1, after des6, 7d
+    Design Patterns         :todo,    sd2, after sd1, 10d
+    Real-World Projects     :todo,    sd3, after sd2, 10d
 ```
 
-### Current Status: 🟩 `~40% Completed (Foundational Phase)`
-- [x] **OOP Basics**: Classes, Objects, Getters/Setters, Access Specifiers.
-- [x] **Memory Layout**: Memory alignment, padding, and `sizeof` analysis.
-- [x] **Lifecycles**: Default, Parameterized, Overloaded, Inline, and Copy Constructors; Destructors.
-- [x] **Memory Management**: Stack vs Heap Allocation, dynamic memory with `new` and `delete`.
-- [x] **Abstraction & Interfaces**: Abstract classes and pure virtual functions.
-- [ ] **Inheritance & Polymorphism** *(Next Goal)*
-- [ ] **SOLID Principles** *(Next Goal)*
-- [ ] **Low-Level Design (LLD)** *(Future Goal)*
-- [ ] **High-Level Design (HLD)** *(Future Goal)*
+### **Current Phase: 🟩 C++ OOPs Foundations (Lectures 70-77)**
+- **OOPs Course Progress**: `~45% Completed`
+- **System Design Course Progress**: `0% (Pending OOPs completion)`
 
 ---
 
 ## 📂 Repository File Structure
 
-Here is the current directory structure of the repository:
-
 ```text
 SystemDesign/
-├── README.md                      # Study documentation and roadmap
-├── abstraction.cpp                # Core abstraction and interface implementation
-├── oops/                          # Folder containing basic OOP building blocks
-│   ├── class.cpp                  # Class definition, encapsulation, getters/setters
-│   ├── obj.cpp                    # Object sizes, memory alignment, and padding
-│   ├── constructor.cpp            # All constructor types (Default, Param, Copy, Inline)
-│   ├── destructor.cpp             # Destructors, deletion order, and heap cleanup
-│   └── dynamicMemoryAllocation.cpp # Dynamic allocation using the 'new' and 'delete' operators
+├── README.md                      # This learning tracker
+├── abstraction.cpp                # Pure virtual functions & interfaces
+└── oops/                          # C++ OOPs folder
+    ├── class.cpp                  # Class definition, getters/setters (Lecture 70/72)
+    ├── obj.cpp                    # Padding, alignment, sizeof (Lecture 70)
+    ├── constructor.cpp            # All constructor variants (Lecture 71)
+    ├── destructor.cpp             # Destructors and execution order (Lecture 71)
+    └── dynamicMemoryAllocation.cpp # Dynamic allocation using 'new' / 'delete' (Lecture 71)
 ```
 
 ---
 
-## 📝 Concepts Explored & Implemented
+## 📚 Curriculum 1: C++ OOPs Foundations (Lectures 70-77)
+*Priority: 🔴 HIGH (Currently working on this)*
 
-### 1. Foundational OOP & Encapsulation
-*   **[oops/class.cpp](file:///e:/SystemDesign/oops/class.cpp)**: Demonstrates the creation of a `Student` class, private member variables, and encapsulation using public getter and setter methods (`setname`, `getName`, etc.) along with boundary validation.
-*   **[oops/obj.cpp](file:///e:/SystemDesign/oops/obj.cpp)**: Deep dive into **Memory Alignment & Padding**. Explores how the compiler aligns different data types (`char`, `int`, `double`) within structures and calculates class sizes using `sizeof`.
-
-### 2. Lifecycles & Memory Management
-*   **[oops/constructor.cpp](file:///e:/SystemDesign/oops/constructor.cpp)**: Covers object initialization strategies:
-    *   **Default Constructor** (sets default values).
-    *   **Parameterized Constructor** (with custom values and `this` pointer).
-    *   **Constructor Overloading** (multiple initialization pathways).
-    *   **Inline Member Initializer Lists** (performance-optimized constructor syntax).
-    *   **Copy Constructor** (creates deep copies of existing objects).
-*   **[oops/destructor.cpp](file:///e:/SystemDesign/oops/destructor.cpp)**: Implements destructors (`~Customer`) to handle resource cleanup and showcases the **LIFO (Last-In-First-Out) destruction order** for stack-allocated objects, as well as explicit cleanup of heap-allocated objects.
-*   **[oops/dynamicMemoryAllocation.cpp](file:///e:/SystemDesign/oops/dynamicMemoryAllocation.cpp)**: Demonstrates how to allocate objects dynamically on the **Heap** using `new` and access members via pointer operators (`->` and `*`), followed by proper memory deallocation.
-
-### 3. Core Abstraction & Interfaces
-*   **[abstraction.cpp](file:///e:/SystemDesign/abstraction.cpp)**: Builds a clean model representing Abstraction. Declares a pure interface `Car` with pure virtual functions (`startEngine`, `gearShift`, `accelerate`, etc.) and implements concrete behaviors in a derived class `SportsCar`. Establishes the use of virtual destructors (`virtual ~Car()`) to prevent memory leaks in derived classes.
+| Lecture | Topic / Focus | Status | Associated Code Files | Key Concepts Covered |
+| :--- | :--- | :---: | :--- | :--- |
+| **L70** | Object Oriented Programming in C++ | **🟢 Completed** | [class.cpp](file:///e:/SystemDesign/oops/class.cpp)<br>[obj.cpp](file:///e:/SystemDesign/oops/obj.cpp) | Classes, objects, memory layout, alignment, and `sizeof`. |
+| **L71** | Constructor and Destructor in C++ | **🟢 Completed** | [constructor.cpp](file:///e:/SystemDesign/oops/constructor.cpp)<br>[destructor.cpp](file:///e:/SystemDesign/oops/destructor.cpp)<br>[dynamicMemoryAllocation.cpp](file:///e:/SystemDesign/oops/dynamicMemoryAllocation.cpp) | Default/Param/Copy/Inline constructors, destructors (LIFO), stack vs heap. |
+| **L72** | Static data Member/Function & Encapsulation | **🟡 Partial** | [class.cpp](file:///e:/SystemDesign/oops/class.cpp) *(Encapsulation)* | Encapsulation is implemented. <br>*Pending:* **Static data members & functions**. |
+| **L73** | Inheritance, Access Modifiers & Real-Life Examples | **⚪ Pending** | *Not started* | Access specifiers (`public`, `protected`, `private`), inheritance basics. |
+| **L74** | Types of Inheritance (Single, Multiple, Hybrid, Multipath) | **⚪ Pending** | *Not started* | Single, Multiple, Hierarchical, Hybrid, Multipath (Diamond problem, virtual base class). |
+| **L75** | Polymorphism & Virtual Functions | **🟡 Partial** | [abstraction.cpp](file:///e:/SystemDesign/abstraction.cpp) *(Abstract Class/Interfaces)* | Pure virtual functions and interfaces implemented. <br>*Pending:* **Function/operator overloading, vtable, vptr, method overriding**. |
+| **L76** | Exception Handling | **⚪ Pending** | *Not started* | `try`, `catch`, `throw`, custom exception classes. |
+| **L77** | File Handling | **⚪ Pending** | *Not started* | File streams (`ifstream`, `ofstream`), reading/writing files. |
 
 ---
 
-## 🎯 Next Learning Goals
+## 📘 Curriculum 2: System Design & LLD
+*Priority: 🟡 MEDIUM (To start after completing C++ OOPs)*
 
-### Phase 1: Advanced OOP Concepts
-*   **Inheritance**: Single, Multiple, Multilevel, Hierarchical, and Hybrid inheritance.
-*   **Polymorphism**: 
-    *   *Compile-time*: Function Overloading & Operator Overloading.
-    *   *Runtime*: Method Overriding, Virtual Functions, and understanding the internals of Virtual Tables (`vtable` and `vptr`).
-
-### Phase 2: SOLID Design Principles
-*   **S**: Single Responsibility Principle
-*   **O**: Open/Closed Principle
-*   **L**: Liskov Substitution Principle
-*   **I**: Interface Segregation Principle
-*   **D**: Dependency Inversion Principle
-
-### Phase 3: Low-Level Design (LLD)
-*   **Design Patterns**: Creational (Singleton, Factory), Structural (Adapter, Facade), and Behavioral (Observer, Strategy).
-*   **Case Studies**: Designing real-world systems like a Parking Lot, Movie Ticket Booking System, or Splitwise.
-
-### Phase 4: High-Level Design (HLD)
-*   System scalability, Load Balancing, CDN, Caching strategies, Database Sharding, Replication, CAP Theorem, and Microservice Architectures.
+| Topic / Lecture | Category | Status | Details |
+| :--- | :--- | :---: | :--- |
+| **1. Intro to System Design** | HLD/LLD Intro | **⚪ Pending** | High-level understanding of design systems. |
+| **2. OOPs Real-World Examples & Pillars** | OOPs in LLD | **⚪ Pending** | Design pillars (Abstraction, Encapsulation, Polymorphism, Inheritance). |
+| **3. Inheritance & Polymorphism in OOPs** | Advanced LLD | **⚪ Pending** | Using inheritance and polymorphism to make systems extensible. |
+| **4. UML Diagrams** | Architecture | **⚪ Pending** | Class diagrams, Sequence diagrams with real-world examples. |
+| **5. SOLID Design Principles (Part 1)** | Principles | **⚪ Pending** | Deep dive into Single Responsibility, Open-Closed, Liskov Substitution. |
+| **6. SOLID Design Principles (Part 2)** | Principles | **⚪ Pending** | Interface Segregation, Dependency Inversion with code examples. |
+| **7. Build Google Docs** | LLD Project | **⚪ Pending** | Real-world document collaboration design (LLD). |
+| **8. Strategy Design Pattern** | Pattern | **⚪ Pending** | Strategy pattern with real-world examples. |
+| **9. Factory Design Pattern** | Pattern | **⚪ Pending** | Simple Factory, Factory Method, Abstract Factory. |
+| **10. Singleton Design Pattern** | Pattern | **⚪ Pending** | Thread-safe, Lazy vs Eager initialization. |
+| **Adapter Design Pattern** | Pattern | **⚪ Pending** | Structural adapter design pattern. |
+| **Command Design Pattern** | Pattern | **⚪ Pending** | Behavioral command pattern with code. |
+| **Composite Design Pattern** | Pattern | **⚪ Pending** | Build File System structure (UML + Code). |
+| **Decorator Design Pattern** | Pattern | **⚪ Pending** | Dynamic behavior extension using decorators. |
+| **Facade Design Pattern** | Pattern | **⚪ Pending** | Interface simplification pattern. |
+| **Observer Design Pattern** | Pattern | **⚪ Pending** | Event-driven notification models. |
+| **Template Method Pattern** | Pattern | **⚪ Pending** | Behavioral subclass template method pattern. |
+| **Build Spotify App** | LLD/HLD Project | **⚪ Pending** | Designing a music player app. |
+| **Build Notification Engine** | LLD Project | **⚪ Pending** | Designing scalable notification dispatchers. |
+| **Build Zomato App** | LLD/HLD Project | **⚪ Pending** | Food delivery architecture and class structure. |
 
 ---
 
-## 🛠️ How to Run the Code
+## 🏃 Compilation Guide
+To compile and run any of the C++ files, navigate to this workspace folder and run:
 
-To compile and run any of the C++ files in this repository, ensure you have a C++ compiler installed (like `g++`).
-
-### Compiling via CLI
-Navigate to the repository folder and compile using:
 ```bash
-# To run files in the oops directory
-g++ oops/class.cpp -o oops/class.exe
-./oops/class.exe
+# Compiling and running files in the oops/ directory
+g++ oops/class.cpp -o oops/class.exe && ./oops/class.exe
 
-# To run the abstraction demo
-g++ abstraction.cpp -o abstraction.exe
-./abstraction.exe
+# Compiling and running the abstraction file
+g++ abstraction.cpp -o abstraction.exe && ./abstraction.exe
 ```
 
 ---
 
-*“Design is not just what it looks like and feels like. Design is how it works.” – Steve Jobs*
+*“First, solve the problem. Then, write the code.” – John Johnson*
