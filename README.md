@@ -60,13 +60,13 @@ SystemDesign/
 | Lecture | Topic / Focus | Status | Associated Code Files | Key Concepts Covered |
 | :--- | :--- | :---: | :--- | :--- |
 | **L70** | Object Oriented Programming in C++ | **🟢 Completed** | [class.cpp](file:///e:/SystemDesign/oops/class.cpp)<br>[obj.cpp](file:///e:/SystemDesign/oops/obj.cpp) | Classes, objects, memory layout, alignment, and `sizeof`. |
-| **L71** | Constructor and Destructor in C++ | **🟢 Completed** | [constructor.cpp](file:///e:/SystemDesign/oops/constructor.cpp)<br>[destructor.cpp](file:///e:/SystemDesign/oops/destructor.cpp)<br>[dynamicMemoryAllocation.cpp](file:///e:/SystemDesign/oops/dynamicMemoryAllocation.cpp) | Default/Param/Copy/Inline constructors, destructors (LIFO), stack vs heap. |
-| **L72** | Static data Member/Function & Encapsulation | **🟡 Partial** | [class.cpp](file:///e:/SystemDesign/oops/class.cpp) *(Encapsulation)* | Encapsulation is implemented. <br>*Pending:* **Static data members & functions**. |
-| **L73** | Inheritance, Access Modifiers & Real-Life Examples | **⚪ Pending** | *Not started* | Access specifiers (`public`, `protected`, `private`), inheritance basics. |
-| **L74** | Types of Inheritance (Single, Multiple, Hybrid, Multipath) | **⚪ Pending** | *Not started* | Single, Multiple, Hierarchical, Hybrid, Multipath (Diamond problem, virtual base class). |
-| **L75** | Polymorphism & Virtual Functions | **🟡 Partial** | [abstraction.cpp](file:///e:/SystemDesign/abstraction.cpp) *(Abstract Class/Interfaces)* | Pure virtual functions and interfaces implemented. <br>*Pending:* **Function/operator overloading, vtable, vptr, method overriding**. |
-| **L76** | Exception Handling | **⚪ Pending** | *Not started* | `try`, `catch`, `throw`, custom exception classes. |
-| **L77** | File Handling | **⚪ Pending** | *Not started* | File streams (`ifstream`, `ofstream`), reading/writing files. |
+| **1** | Constructor and Destructor in C++ | **🟢 Completed** | [constructor.cpp](file:///e:/SystemDesign/oops/constructor.cpp)<br>[destructor.cpp](file:///e:/SystemDesign/oops/destructor.cpp)<br>[dynamicMemoryAllocation.cpp](file:///e:/SystemDesign/oops/dynamicMemoryAllocation.cpp) | Default/Param/Copy/Inline constructors, destructors (LIFO), stack vs heap. |
+| **2** | Static data Member/Function & Encapsulation | **🟡 Partial** | [class.cpp](file:///e:/SystemDesign/oops/class.cpp) *(Encapsulation)* | Encapsulation is implemented. <br>*Pending:* **Static data members & functions**. |
+| **3** | Inheritance, Access Modifiers & Real-Life Examples | **⚪ Pending** | *Not started* | Access specifiers (`public`, `protected`, `private`), inheritance basics. |
+| **4** | Types of Inheritance (Single, Multiple, Hybrid, Multipath) | **⚪ Pending** | *Not started* | Single, Multiple, Hierarchical, Hybrid, Multipath (Diamond problem, virtual base class). |
+| **5** | Polymorphism & Virtual Functions | **🟡 Partial** | [abstraction.cpp](file:///e:/SystemDesign/abstraction.cpp) *(Abstract Class/Interfaces)* | Pure virtual functions and interfaces implemented. <br>*Pending:* **Function/operator overloading, vtable, vptr, method overriding**. |
+| **6** | Exception Handling | **⚪ Pending** | *Not started* | `try`, `catch`, `throw`, custom exception classes. |
+| **7** | File Handling | **⚪ Pending** | *Not started* | File streams (`ifstream`, `ofstream`), reading/writing files. |
 
 ---
 
